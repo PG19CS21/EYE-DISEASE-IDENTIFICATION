@@ -12,3 +12,8 @@ from keras.models import Sequential
 from keras.preprocessing.image import ImageDataGenerator
 from sklearn.metrics import classification_report, confusion_matrix, plconfusion_matrix
 from keras.layers import Dense, Conv2D, MaxPool2D, Flatten, BatchNormalization, Dropout, RandomContrast, RandomRotation, RandomZoom, RandomFlip
+
+
+data_dir = pathlib.Path("/content/dataset")
+data = image_dataset_from_directory(data_dir, seed = 123, image_size=(224, 224))
+class_names = data.class_names
