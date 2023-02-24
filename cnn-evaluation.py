@@ -12,3 +12,5 @@ model = Sequential([
         Dense(4, activation='softmax')
     ])
 model.compile(loss='sparse_categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+
+model.summary()
