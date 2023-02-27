@@ -1,0 +1,1 @@
+history = model.fit(train, validation_data=val, epochs = 10)
